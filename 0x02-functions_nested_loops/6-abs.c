@@ -11,7 +11,7 @@ int _abs(int c)
 	if (c < 0)
 	{
 	int a_value;
-	
+
 	a_value = c * -1;
 	return (a_value);
 	}
