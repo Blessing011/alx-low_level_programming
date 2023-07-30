@@ -6,24 +6,25 @@
  * @src: input value
  * Return: void
  */
+
 char *_strcat(char *dest, char *src)
 {
-	int y;
-	int z;
+	int i;
+	int j;
 
-	y = 0;
-	while (dest[y] != '\0')
+	i = 0;
+	while (dest[i] != '\0')
 	{
-		y++;
+		i++;
 	}
-	z = 0;
-	while (src[z] != '\0')
+	j = 0;
+	while (src[j] != '\0')
 	{
-		dest[y] = src[z];
-		Y++;
-		z++;
+		dest[i] = src[j];
+		i++;
+		j++;
 	}
 
-	dest[y] = '\0';
+	dest[i] = '\0';
 	return (dest);
 }
