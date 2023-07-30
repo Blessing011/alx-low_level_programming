@@ -1,11 +1,15 @@
 #include "main.h"
 /**
- * mul - Multiplies two integers
- * @y: The first number to multiply
- * @z: The second number to multiply with first number
- * Return: The result of multiplication between x param and y param
+ * mul - func checks for checks for a digit (0 through).
+ * @a: a - variable
+ * @b: b - variable
+ * Return: Always 0.
  */
-int mul(int y, int z)
+int mul (int a, int b)
+
 {
-	return (y * z);
+	int mul;
+
+	mul = a * b;
+	return (mul);
 }
