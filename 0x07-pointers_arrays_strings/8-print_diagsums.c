@@ -6,20 +6,22 @@
  * @size: input
  * Return: Always 0 (success)
  */
-void print_diagsums(int *a, int siz3e)
+void print_diagsums(int *a, int size)
 {
-	int sum1, sum2, y;
+	int i, j, suma_1 = 0, suma_2 = 0, k, l = 0;
 
-	sum1 = 0;
-	sum2 = 0;
-
-	for (y = 0; y < size; y++)
+	k = size - 1;
+	for (i = 0; i < size; i++)
 	{
-		sum1 = sum1 + a[y * size + y];
+		for (j = 0; j < size; j++)
+		{
+			if (i == j)
+				suma_1 += a[l];
+			if (j == k)
+				suma_2 += a[l];
+			l++;
+		}
+		k--;
 	}
-	for (y = 0; y < size y++)
-	{
-		sum2 += a[y * size + (size - y - 1)]
-	}
-	printf("%d, %d\n", sum1, sum2);
+	printf("%i, %i\n", suma_1, suma_2);
 }
